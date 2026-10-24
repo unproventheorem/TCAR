@@ -1,0 +1,73 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Twin Cities Animal Rescue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">
+      <img src="rescue-logo_c.png" width="45" height="45">
+      Twin Cities Animal Rescue
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="section">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Fill out this form if you want to volunteer, foster, or learn about adoption.</p>
+
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="interest">Which role interests you most?</label>
+      <select id="interest" name="interest" required>
+        <option value="">Choose one</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="foster">Foster</option>
+        <option value="adoption">Adoption Information</option>
+      </select>
+
+      <label for="availability">Availability</label>
+      <input type="text" id="availability" name="availability">
+
+      <label for="experience">Experience With Pets</label>
+      <textarea id="experience" name="experience"></textarea>
+
+      <label for="message">Short Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Service Area</h2>
+    <p>We serve the Twin Cities area and neighboring counties.</p>
+
+    <h2>Office Hours</h2>
+    <p>Monday-Saturday: 8 AM - 5 PM</p>
+    <p>Sunday: Closed</p>
+    <h2>A message from our Director</h2>
+    <audio controls>
+      <source src="rescue-message_c.mp3" type="audio/mpeg">
+      Your browser can't play this audio file.
+    </audio>
+  </div>
+</div>
+</main>
+</body>
+</html>

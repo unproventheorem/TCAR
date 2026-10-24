@@ -1,0 +1,142 @@
+:root {
+  --cream: #FFF8F0;
+  --charcoal: #2F2A26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+
+a { color: var(--charcoal); }
+
+.container {
+  width: 94%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.site-header, .site-footer {
+  border-bottom: 2px solid var(--charcoal);
+  padding: 12px 0;
+}
+
+.nav-wrap, .logo, nav ul, .grid {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-wrap, .grid {
+  flex-direction: column;
+}
+
+.logo {
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav a { padding-right: 8px; }
+
+.section { padding: 20px 0; }
+
+.card {
+  border: 1px solid var(--charcoal);
+  padding: 10px;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+figure { margin: 0; }
+figcaption { font-size: 14px; }
+
+button {
+  background: var(--charcoal);
+  color: var(--cream);
+  border: 1px solid var(--charcoal);
+  padding: 7px 12px;
+  font: inherit;
+}
+
+form {
+  border: 1px solid var(--charcoal);
+  padding: 12px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 7px;
+  margin-top: 3px;
+  background: var(--cream);
+  color: var(--charcoal);
+  border: 1px solid var(--charcoal);
+  font: inherit;
+}
+
+textarea { min-height: 90px; }
+button { margin-top: 12px; }
+:focus-visible { outline: 2px solid var(--charcoal); }
+
+@media (min-width: 760px) {
+  .nav-wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .two-col, .three-col {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .two-col > * {
+    flex: 1 1 40%;
+    min-width: 0;
+  }
+
+  .three-col > * {
+    flex: 1 1 28%;
+    min-width: 0;
+  }
+
+  .form-grid > * {
+    flex: 1 1 40%;
+    min-width: 0;
+  }
+
+  .form-grid > .full { flex-basis: 100%; }
+}
